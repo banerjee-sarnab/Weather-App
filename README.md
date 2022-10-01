@@ -5,10 +5,25 @@ Jump to: [`React weather app final look.pic.jpg`](https://github.com/KrystalZhan
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
+`NOTE 1:` <br/>
+[Method pushing Vscode from Linux system to Github branch](https://stackoverflow.com/questions/45891052/vs-code-how-to-use-github-with-existing-local-project):<br/>
+In Vscode Terminal: 
+`git init .`<br/> 
+`git config --global user.name <yourGitHubAccount>`<br/> 
+`git config --global user.email <yourGitHubEmailAccount>`<br/> 
+`git add .`<br/>
+`git status`<br/> 
+`git commit -m "COMMIT MESSAGE"`<br/> 
+`git remote add origin https://github.com/<yourGitHubAccount>`<br/>
+`git push -u origin master`<br/>
+`NOTE 2:` <br/>
+Method replacing main branch with the new branch in Pull request:<br/>
+Change New Branch in Github account `branches` section into Default Branch. <br/>
 
 # Build 
 [Prerequisites & Setups](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#prerequisites--setups)<br/>
-[Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
+[Method Running The Project(Locally)](http
+s://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#synchronous-developing-notes)
 
