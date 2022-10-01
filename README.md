@@ -22,7 +22,8 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 [Prerequisites & Setups](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#prerequisites--setups)<br/>
 [Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#debuggingtroubleshooting)<br/> 
-[Synchronous Developing Notes](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#synchronous-developing-notes)
+[Synchronous Developing Notes](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#synchronous-developing-notes)<br/>
+[Testing Results]()
 
 # Prerequisites & Setups
 ## ***Getting API Keys:***
@@ -125,7 +126,7 @@ Import GEO_API_URL:
 ```JavaScript 
 import {GEO_API_URL, geoApiOptions} from “../../api”;
 ```
-Now format the document in Vscode and refresh the React App page:
+Now format the document in Vscode and refresh the React App page:<br/>
 [cities prefix data list fetched.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/cities%20prefix%20data%20list%20fetched.pic.jpg) <br/>
 [case search tokyo.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/case%20search%20tokyo.pic.jpg) <br/>
 
@@ -133,6 +134,7 @@ Now format the document in Vscode and refresh the React App page:
 
 
 
+# Testing Results
 
 
 # Debugging&Troubleshooting
