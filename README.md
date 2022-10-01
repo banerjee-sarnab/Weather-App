@@ -105,9 +105,30 @@ const handleOnSearchChange = (searchData) => { Console.log(searchData)}
 ```
 Refresh localhost, the searching placeholder with a query prompt should be visible.<br/>
 Since we are loading properties through async paginate, we need to call `loadOptions` to fetch the certain APIs when retrieve the input values to implement the fetching method:<br/>
-
+```JavaScript
 const loadOptions = (inputValue) => (
 return fetch{...})
+```
+Copy and paste `GET CITIES API` from GeoDB website.<br/>
+Create a new file under src named [api.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/api.js):
+```JavaScript 
+export const geoApiOptions ={ 
+API KEYS CONFIDENTIAL INFOS} 
+export const GEO_API_URL = ...
+```
+Then in [search.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/search/search.js):<br/>
+Limit the input value as cities with requirement as mininmim 1 million population:
+```JavaScript 
+`{GEO_API_URL}/cities?minPopulation=1000000namePrefix=$inputValue)`
+```
+Import GEO_API_URL:
+```JavaScript 
+import {GEO_API_URL, geoApiOptions} from “../../api”;
+```
+Now format the document in Vscode and refresh the React App page:
+[cities prefix data list fetched.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/cities%20prefix%20data%20list%20fetched.pic.jpg) <br/>
+[case search tokyo.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/case%20search%20tokyo.pic.jpg) <br/>
+
 
 
 
