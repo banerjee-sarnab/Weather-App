@@ -6,7 +6,10 @@ Jump to: [`React weather app final look.pic.jpg`](https://github.com/KrystalZhan
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
 
-# Getting Started with Create React App
+# Build 
+[Method Running The Project(Locally)]()
+
+# Method Running The Project(Locally)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
