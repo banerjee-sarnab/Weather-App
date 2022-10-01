@@ -156,7 +156,7 @@ Compiled with problems:
 ERROR
 [eslint] Plugin “react” was conflicted between “package.json >> eslint-react-app >> base.js directory...
  ```
- DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
+DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
 - 
 
 
