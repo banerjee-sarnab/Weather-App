@@ -9,6 +9,8 @@ Jump to: [`React weather app final look.pic.jpg`](https://github.com/KrystalZhan
 # Build 
 Prerequisites & Setups<br/>
 [Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
+[Debugging&Troubleshooting]()
+[Synchronous Developing Notes]()
 
 # Prerequisites & Setups
 ## ***Getting API Keys:***
@@ -25,8 +27,28 @@ This will take a few minutes to install the React App packages, it is ready once
 `npm start`<br/>
 `Happy hacking!`<br/>
 Open the created folder in the local address with Vscode IDE.<br/>
+## ***Setups: Creating the application and installing packages:***
+In Vscode Terminal, install two essential prerequisite packages before starting:<br/>
+`Npm i react-accessible-accordion`<br/>
+## ***Activate React app:***
+`Npm run start`<br/>
+React app setups and activation work if we are redirected automatically by Node.JS to `localhost:3000` and message in Powershell terminal returns:<br/>
+`Compiled successfully!`<br/>
+`...`<br/>
+`Webpack compiled successfully`<br/>
+# Synchronous Developing Notes
 
 
+# Debugging&Troubleshooting
+- Noticeable Setup Error: <br/>
+`‘npm’ is not recognized as internal or external command, operable program or batch file `  warning occurs when trying to run the npm command. DEBUGGING: Go to [Node.JS](https://nodejs.org). Install `node-v16.17.1-x64` to Local Disk C: <br/>
+Then in Vscode Terminal, install:<br/>
+`npm i-react-select-async-paginat`<br/>
+Ignore `high vulnarbilities` warnings.<br/>
+Instead, do: `npm i-react-select-async-paginat --force` to add more protections. <br/>
+- Possible Error When Activating React App: `Warning react-scripts: command not found`<br/>
+DEBUGGING: install react-script globally instead: `npm install -g react-scripts` <br/>
+- 
 
 
 
