@@ -1,5 +1,6 @@
 # WeatherNavigator App
-A weather application using the OpenWeatherMap API and GeoDB API with places autocomplete, along with React skills. 
+A weather application using the OpenWeatherMap API and GeoDB API with places autocomplete, along with React skills. <br/>
+Jump to: [React weather app final look.pic.jpg]()
 # Developing tools: 
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
