@@ -151,13 +151,13 @@ Instead, do: `npm i-react-select-async-paginat --force` to add more protections.
 DEBUGGING: install react-script globally instead: `npm install -g react-scripts` <br/>
 - Stubborn Error `Access Denied` when removin @emotions fallbacks in node_modules inherited from npm package. DEBUGGING: [Access denied Win 10 Solution]( https://answers.microsoft.com/en-us/windows/forum/all/access-denied-windows-10/2a5429ee-dc93-4095-8058-a5ecfd2b69c9). 
 - Frequently Occurring Error: React App warning on localhost:<br/>
- ```
-Compiled with problems:
-ERROR
-[eslint] Plugin “react” was conflicted between “package.json >> eslint-react-app >> base.js directory...
- ```
-DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
+-  `Compiled with problems:`<br/>
+`ERROR`<br/>
+`[eslint] Plugin “react” was conflicted between “package.json >> eslint-react-app >> base.js directory...`<br/>
+ DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
 - 
+
+
 
 
 
