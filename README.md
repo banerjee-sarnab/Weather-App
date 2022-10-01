@@ -7,7 +7,12 @@ Jump to: [`React weather app final look.pic.jpg`](https://github.com/KrystalZhan
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
 
 # Build 
-[Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)
+Prerequisites & Setups<br/>
+[Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
+
+# Prerequisites & Setups
+## ***Getting API Keys:***
+
 
 # Method Running The Project(Locally)
 
