@@ -129,6 +129,40 @@ import {GEO_API_URL, geoApiOptions} from “../../api”;
 Now format the document in Vscode and refresh the React App page:<br/>
 [cities prefix data list fetched.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/cities%20prefix%20data%20list%20fetched.pic.jpg) <br/>
 [case search tokyo.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/case%20search%20tokyo.pic.jpg) <br/>
+Now the initial prefix names of the global cities data successfully fetched and searchable.<br/>
+## ***Building Current Weather Components:***
+Fetch data for current weather:<br/>
+Create a new component folder named current-weather and their javascript and css files:<br/>
+[Current-weather.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/current-weather/current-weather.js) and [current-weather.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/current-weather/current-weather.css).<br/>
+In current-weather.js:
+```JavaScript 
+import “/current-weather.css“
+const CurrentWeather = () => {
+return “hello”;
+}export default CurrentWeather;
+```
+And import CurrentWeather in [App.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/App.js):
+```JavaScript 
+ import CurrentWeather from ‘./components/current-weather/current-weather’;
+```
+“Hello” should appear underneath the Search placeholder bar.<br/>
+Now replace “Hello” with a testing city case: i.e. Tokyo Sunny:
+```JavaScript 
+return (
+<div className=”weather”>
+<div className =”top”>
+<p className = “city”>Tokyo</p>
+<p className = “weather-description”> Sunny</p></div>
+```
+Import weather icons into public src:
+```JavaScript 
+<img alt=”weather” className = “weather-icon” src = “icons/01d.png”/>
+```
+Downloadable weather [icons](https://github.com/bobangajicsm/react-weather-app/blob/main/public/icons).<br/>
+
+
+
+
 
 
 
