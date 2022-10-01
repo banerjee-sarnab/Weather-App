@@ -78,7 +78,33 @@ In [index.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newb
 font-family: “Roboto”, Arial!important; ...
 background-color: #d5d4d4
 ```
-
+Now proceed to build our Search components. Back to [search.js](htps://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/search/search.js):<br/>
+Import `useState` and `AsyncPaginate` to fetch data:
+```JavaScript
+import {useState} from “react”;
+import {AsyncPaginate} from “react-select-async-paginate”;
+```
+Async paginate needs essential parameters:<br/>
+A placeholder to prompt user input searching query:<br/>
+```JavaScript 
+Placeholder = “Search for a city”
+```
+To time out the data fetching:
+```JavaScript 
+debounceTimeout = {600}
+```
+Also a dynamic `onChange` to handle synchronous changes:
+```JavaScript 
+onChange = {handleOnChange}
+```
+To make the search parameters effective and visible, call it in [App.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/App.js):
+```JavaScript
+const handleOnSearchChange = (searchData) => { Console.log(searchData)}
+...
+<Search onSearchChange = {handleSearchChange} />
+```
+Refresh localhost, the searching placeholder with a query prompt should be visible.<br/>
+Since we are loading properties through async paginate, we need to call `loadOptions` to fetch the certain APIs when retrieve the input values to implement the fetching method:<br/>
 
 
 
