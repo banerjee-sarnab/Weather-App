@@ -20,10 +20,10 @@ Sign up. In My Account generated my unique API keys and services. <br/>
 In `Linux Ubuntu Terminal`:<br/>
 `npx create-react-app react-weather-app`<br/>
 This will take a few minutes to install the React App packages, it is ready once terminal says:<br/>
-`we suggest that you begin by typing:
-cd react-weather-app
-npm start 
-Happy hacking!`
+`we suggest that you begin by typing:`
+`cd react-weather-app`
+`npm start`
+`Happy hacking!`
 Open the created folder in the local address with Vscode IDE.<br/>
 
 
