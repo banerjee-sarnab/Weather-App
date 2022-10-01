@@ -9,7 +9,7 @@ Jump to: [`React weather app final look.pic.jpg`](https://github.com/KrystalZhan
 # Build 
 Prerequisites & Setups<br/>
 [Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
-[Debugging&Troubleshooting]()
+[Debugging&Troubleshooting](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes]()
 
 # Prerequisites & Setups
