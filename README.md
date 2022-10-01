@@ -37,6 +37,9 @@ React app setups and activation work if we are redirected automatically by Node.
 `...`<br/>
 `Webpack compiled successfully`<br/>
 # Synchronous Developing Notes
+Create a new folder under [src](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/src) named [components](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/src/components), create a new folder under components named [search](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/src/components/search), create a new file under search named [search.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/search/search.js).<br/>
+
+
 
 
 # Debugging&Troubleshooting
