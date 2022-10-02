@@ -429,18 +429,75 @@ In [forecast.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/n
 .icon-small {
     width: 40px;}
 ```
-[better aligned forecast.pic.jpg]()<br/>
-
-
-
-
-
-
-
-
-
-
-
+[better aligned forecast.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/better%20aligned%20forecast.pic.jpg)<br/>
+Also add `day, description, min-max`, all forecast properties properly aligned now:
+[all forecast properties properly aligned.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/all%20forecast%20properties%20properly%20aligned.pic.jpg)<br/>
+Add grids in `AccordionItemPanels`:
+```JavaScript 
+<div className="daily-details-grid">
+                       <div
+className="daily-details-grid-item">
+hPa</label>
+    <label>Pressure:</label>
+    <label>{item.main.pressure}
+</div>
+                      <div
+className="daily-details-grid-item">
+                                    <label>Humidity:</label>
+<label>{item.main.humidity}%</label>
+                                </div>
+                                <div
+className="daily-details-grid-item">
+                        <label>Clouds:</label>
+            <label>{item.clouds.all}%</label>
+                                </div>
+                  <div
+                  className="daily-details-grid-item">
+m/s</label>
+    <label>Wind speed:</label>
+    <label>{item.wind.speed}
+</div>
+                                <div
+className="daily-details-grid-item">
+                                    <label>Sea level:</label>
+<label>{item.main.sea_level}</label>
+                                </div>
+                                <div
+className="daily-details-grid-item">
+                                    <label>Feels like:</label>
+<label>{Math.round(item.main.feels_like)}°C</label>
+                                </div>
+                            </div>
+                        </AccordionItemPanel>
+```
+Click on any grid when can obtain all forecast information: [forecast grid all ino.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20grid%20all%20info.pic.jpg)<br/>
+Now we need to adjust the styles of all this information.<br/>
+So in [forecast.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/forecast/forecast.css):
+```css
+daily-details-grid {
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    row-gap: 0;
+    column-gap: 15px;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    padding: 5px 15px;
+}
+.daily-details-grid-item {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.daily-details-grid-item label:first-child {
+    color: #757575;
+}
+.daily-details-grid-item label :last-child {
+    color: #212121;
+}
+```
+Finishing up the last styles, then our application is built.
 
 # Testing Results
 [cities prefix data list fetched.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/cities%20prefix%20data%20list%20fetched.pic.jpg) <br/>
@@ -462,9 +519,9 @@ In [forecast.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/n
 [date and icons.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/dates%20and%20icons.pic.jpg)<br/>
 [forecast with description.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20with%20description.pic.jpg)<br/>
 [forecast with min-max temperature.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20with%20min-max%20temperature.pic.jpg)<br/>
-
-
-
+[better aligned forecast.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/better%20aligned%20forecast.pic.jpg)<br/>
+[all forecast properties properly aligned.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/all%20forecast%20properties%20properly%20aligned.pic.jpg)<br/>
+[forecast grid all ino.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20grid%20all%20info.pic.jpg)<br/>
 
 # Debugging&Troubleshooting
 - Noticeable Setup Error: <br/>
@@ -481,17 +538,6 @@ DEBUGGING: install react-script globally instead: `npm install -g react-scripts`
 `ERROR`<br/>
 `[eslint] Plugin “react” was conflicted between “package.json >> eslint-react-app >> base.js directory...`<br/>
  DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
-- 
-
-
-
-
-
-
-
-
-
-
 
 # Method Running The Project(Locally)
 
