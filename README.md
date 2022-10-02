@@ -320,6 +320,118 @@ For top, modify by passing the city, weather-description and icon data:
 <img alt=”weather” className=”weather-icon” src={`icons/${data.weather[0].icon}.png`}/>
 ```
 Now on localhost, search for different cities and their real-time weather status display correctly:<br/>
+[los angeles real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/los%20angeles%20real-time%20weather.pic.jpg)<br/>
+[berlin real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/berlin%20real-time%20weather.pic.jpg)<br/>
+[san diego real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/san%20diego%20real-time%20weather.pic.jpg)<br/>
+[tokyo real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/tokyo%20real-time%20weather.pic.jpg)<br/>
+To get the temperature displayed as Celsius degree, append to `WEATHER_API_KEY`:
+```JavaScript 
+&units=metric
+```
+For bottom, pass data to temperature, details, feels like, wind speed, humidity and pressure:
+```JavaScript 
+...temperature {Math.round(data.main.temp)} °C
+...Feels like {Math.round(data.main.feels_like)} °C
+...Wind {data.wind.speed}m/s
+...Humidity{data.main.humidity}%
+...Pressure(data.main.pressure)hPa
+```
+Now the completed real-time weather statuses are all finished fetching:<br/>
+[sydney real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/sydney%20real-time%20weather.pic.jpg)<br/>
+[dubai real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/dubai%20real-time%20weather.pic.jpg)<br/>
+[rome real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/rome%20real-time%20weather.pic.jpg)<br/>
+[mumbai real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/mumbai%20real-time%20weather.pic.jpg)<br/>
+## ***Building weather forecast component:***
+Similar to current weather, start off by creating a new component folder named forecast, along with corresponding JS and CSS files [forecast.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/forecast/forecast.js), [forecast.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/forecast/forecast.css).<br/>
+Test if `Forecast` is successfully exported in [forecast.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/forecast/forecast.js):
+```JavaScript 
+const Forecast = () => {
+return ‘Hello’; }
+export default Forecast;
+```
+Import forecast in [App.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/App.js):
+```JavaScript 
+import Forecast from “./components/forecast/forecast”;
+```
+“Hello” now displays on the placeholder at the forecast position.<br/>
+Use [Accordion](https://en.wikipedia.org/wiki/Accordion_(GUI))to properly implement forecasts:
+```JavaScript 
+const Forecast = ({ data }) => {
+return ( <>
+            <label className="title">Daily</label>
+            <Accordion allowZeroExpanded>
+                {data.list.splice(0, 7).map((item, idx) => (
+                    <AccordionItem key={idx}>
+                        <AccordionItemHeading>
+                            <AccordionItemButton>
+                                <div className="daily-item">
+                                    <img alt="weather"
+className="icon-small" src={`icons/${item.weather[0].icon}.png`} />
+                                </div>
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel></AccordionItemPanel>
+                    </AccordionItem>
+                ))}</Accordion>
+```
+Future 7 days of forecasts of weather small-icons displays:<br/>
+[7 days daily forecast small icons.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/7%20days%20daily%20forecast%20small%20icons.pic.jpg)<br/>
+Now start an array to map each date in a week to its corresponding weather that date:
+```JavaScript 
+const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday',
+'Friday', 'Saturday', 'Sunday'];
+const Forecast = ({ data }) => {
+    const dayInAWeek = new Date().getDay();
+    const forecastDays = WEEK_DAYS.slice(dayInAWeek,
+WEEK_DAYS.length).concat(
+        WEEK_DAYS.slice(0, dayInAWeek)
+    );
+    console.log(forecastDays);
+```
+Now add the map index as the label under small-icon images:
+```JavaScript 
+<label className =”day”>{forecastDays[idx]}</label>
+```
+So, if we search a specific city, its future a week of forecasts display along with icons on side:<br/>
+[date and icons.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/dates%20and%20icons.pic.jpg)<br/>
+Add forecasts descriptions:
+```JavaScript 
+<label className =”descriptions”>{item.weather[0].description}</label>
+```
+[forecast with description.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20with%20description.pic.jpg)<br/>
+Add to display the minimum and the max temperatures across a day:
+```JavaScript 
+ <label className="min-max">
+{Math.round(item.main.temp_min)}°C /{" "}
+{Math.round(item.main.temp_max)}°C
+</label>
+```
+[forecast with min-max temperature.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20with%20min-max%20temperature.pic.jpg)<br/>
+Now to make the forecasts properly aligned, first
+```JavaScript 
+import ‘./forecast.css’;
+```
+In [forecast.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/forecast/forecast.css), add alignments on title, daily-item and icon-small:
+```css
+ .title {
+    font-size: 23px;
+    font-weight: 700;}
+.daily-item {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 20px;}
+.icon-small {
+    width: 40px;}
+```
+[better aligned forecast.pic.jpg]()<br/>
+
+
 
 
 
@@ -338,6 +450,18 @@ Now on localhost, search for different cities and their real-time weather status
 [feels like details.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/feels%20like%20details.pic.jpg)<br/>
 [more details.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/more%20details.pic.jpg)<br/>
 [properly aligned current weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/properly%20aligned%20current%20weather.pic.jpg)<br/>
+[los angeles real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/los%20angeles%20real-time%20weather.pic.jpg)<br/>
+[berlin real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/berlin%20real-time%20weather.pic.jpg)<br/>
+[san diego real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/san%20diego%20real-time%20weather.pic.jpg)<br/>
+[tokyo real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/tokyo%20real-time%20weather.pic.jpg)<br/>
+[sydney real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/sydney%20real-time%20weather.pic.jpg)<br/>
+[dubai real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/dubai%20real-time%20weather.pic.jpg)<br/>
+[rome real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/rome%20real-time%20weather.pic.jpg)<br/>
+[mumbai real-time weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/mumbai%20real-time%20weather.pic.jpg)<br/>
+[7 days daily forecast small icons.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/7%20days%20daily%20forecast%20small%20icons.pic.jpg)<br/>
+[date and icons.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/dates%20and%20icons.pic.jpg)<br/>
+[forecast with description.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20with%20description.pic.jpg)<br/>
+[forecast with min-max temperature.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/forecast%20with%20min-max%20temperature.pic.jpg)<br/>
 
 
 
