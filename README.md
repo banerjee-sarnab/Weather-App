@@ -159,6 +159,167 @@ Import weather icons into public src:
 <img alt=”weather” className = “weather-icon” src = “icons/01d.png”/>
 ```
 Downloadable weather [icons](https://github.com/bobangajicsm/react-weather-app/blob/main/public/icons).<br/>
+[Tokyo-sunny-test.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/tokyo-sunny-test.pic.jpg)<br/>
+Set up current weather box’s alignment in [current-weather.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/current-weather/current-weather.js):
+```JavaScript 
+.weather{
+Width: 300px;
+Border-radius: 6px;
+Box-shadow: 10px -2px  20px 2px rgb(0 0 0 /30%);
+Color: #fff;
+Background: #333;
+margin: 20px auto 0 auto;
+}
+```
+Now we have the current weather black box located at the center of white background:<br/>
+[30% black box.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/30%25%20black%20box.pic.jpg)<br/>
+Some more alignment settings in [current-weather.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/current-weather/current-weather.css):
+```css
+.top{
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+}
+```
+Add a little bit more padding:
+```css
+padding: 0 20px 20px 20px;
+```
+Alignment setup for the city:
+```css
+.city {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px; }
+```
+Alignment setup for weather description:
+```css
+.weather-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;}
+```
+Add some more details of the weather temperature and “feels like” at bottom:
+```JavaScript 
+<p className=”temperature”>18 celsius degree </p>
+<div className=”details”>
+    <div className = “details”>
+     <div className = “parameter-row”>
+      <span className = “parameter-label”Details</span>
+ <div className = “parameter-row”>
+  <span className = “parameter-label”> Feels like</span>
+   <span className = “parameter-value”> 22 celsius degree </span>
+```
+[feels like details.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/feels%20like%20details.pic.jpg)<br/>
+with some more details properties:
+```JavaScript 
+wind...Humidity...Pressure...
+```
+[more details.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/more%20details.pic.jpg)<br/>
+Now we just need to polish the alignment of each property detail in [current-weather.css](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/current-weather/current-weather.css):<br/>
+For temperature:
+```css
+.temperature{
+   font-weight: 600;
+   font-siZe: 70px;
+   width: auto;
+   letter-spacing: -5px;
+   margin: 10px 0;
+}
+```
+For details:
+```css
+.details{
+   width: 100%;
+   padding-left: 20px;
+}
+```
+For parameter row horizontal alignment:
+```css
+.parameter-row{
+   display: flex;
+   justify-content: space-between;
+}
+```
+For parameter label:
+```css
+.parameter-label{
+   text-align: left;
+   font-weight: 400;
+   font-size: 12px;
+}
+```
+For parameter value:
+```css
+.parameter-value{
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+```
+[properly aligned current weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/properly%20aligned%20current%20weather.pic.jpg)<br/>
+## ***Fetching and mapping data from weather API:***
+In open weather website, obtain the API keys for both current weather and forecast weather’s latitude and longitude data, store them into split value:
+```JavaScript 
+const [lat, lon] = searchData.value.split(“ “);
+```
+Fetch the current weather by pasting and properly formatting its API:
+```JavaScript 
+const currentWeatherFetch = fetch(`API-KEY`);
+```
+Fetch the forecast weather by pasting and properly formatting its API:
+```JavaScript 
+const forecastFetch = fetch(`API-KEY`);
+```
+`NOTE: The fetching order matters.`<br/>
+Map the fetched data to JSON and await for its response:
+```JavaScript 
+Promise.all([currentWeatherFetch, forecastFetch])
+   .then(async(response) => {
+     const weatherResponse = await response[0].json();
+     const forecastResponse = await response[0].json();})
+```
+Import `useState` from React JS and initialize it:
+```JavaScript 
+import {useState} from ‘react’;
+const [currentWeather, setCurrentWeather] = useState(null);
+const [forecast, setForecast] = useState(null);
+```
+Store the ordered fetched data’s JSON responses:
+```JavaScript 
+setCurrentWeather({weatherResponse}); 
+setForecast({forecastResponse});
+```
+Also, we want its fetched current weather and forecast weather datas to be synchronously showing up in the console element while we search for a specific city. So extend it:
+```JavaScript 
+setCurrentWeather({city: searchData.label, ...weatherResponse}); 
+setForecast({city: searchData.label,...forecastResponse});
+```
+Catch the potential errors:
+```JavaScript 
+.catch((err) => console.log(err));
+```
+And update the console logs:
+```JavaScript 
+console.log(currentWeather);
+console.log(forecast);
+```
+## ***Pass the current weather data and correctly display them when searching for a specific city:***
+In [App.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/App.js):
+```JavaScript 
+{currentWeather && <CurrentWeather data = {currentWeather}/>}
+```
+In [current-weather.js](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/src/components/current-weather/current-weather.js). Do some modifications for each property:<br/>
+For top, modify by passing the city, weather-description and icon data:
+```JavaScript 
+<p className =”city”>{data.city}</p>
+<p className = “weather-description”> {data.weather[0].description}</p>
+<img alt=”weather” className=”weather-icon” src={`icons/${data.weather[0].icon}.png`}/>
+```
+Now on localhost, search for different cities and their real-time weather status display correctly:<br/>
 
 
 
@@ -172,6 +333,13 @@ Downloadable weather [icons](https://github.com/bobangajicsm/react-weather-app/b
 # Testing Results
 [cities prefix data list fetched.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/cities%20prefix%20data%20list%20fetched.pic.jpg) <br/>
 [case search tokyo.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/case%20search%20tokyo.pic.jpg) <br/>
+[Tokyo-sunny-test.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/tokyo-sunny-test.pic.jpg)<br/>
+[30% black box.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/30%25%20black%20box.pic.jpg)<br/>
+[feels like details.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/feels%20like%20details.pic.jpg)<br/>
+[more details.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/more%20details.pic.jpg)<br/>
+[properly aligned current weather.pic.jpg](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/properly%20aligned%20current%20weather.pic.jpg)<br/>
+
+
 
 
 # Debugging&Troubleshooting
