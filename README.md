@@ -26,7 +26,7 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 [Testing Results](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#testing-results)<br/>
 
 # Contribution
-[Author]()
+[Author](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#author)
 
 # Compatibility
 `Windows 10`, `WSL Vscode 1.68+`, `Linux Ubuntu 22.04.1 LTS`.
