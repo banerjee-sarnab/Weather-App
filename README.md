@@ -33,7 +33,10 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 
 # Method Running The Project(Locally)
 
-Download the project `public` and `src` folders to local directory. 
+Download the project [`public`](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/public) and [`src`](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/src) folders to local directory. <br/>
+In local console, locate to the project direcctory.<br/>
+
+
 
 
 
