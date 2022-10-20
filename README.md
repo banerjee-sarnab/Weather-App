@@ -1,6 +1,8 @@
 # WeatherNavigator App
 A weather application using the OpenWeatherMap API and GeoDB API with places autocomplete, along with React skills. <br/>
-Jump to: [`React weather app final look.pic.jpg`](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/React%20weather%20app%20final%20look.pic.jpg)
+## WeatherNavigator App Overview:<br/>
+![Screenshot]()
+
 # Developing tools: 
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
@@ -19,8 +21,8 @@ In Vscode Terminal: <br/>
 Change New Branch in Github account `branches` section into Default Branch. <br/>
 
 # Build 
-[Prerequisites & Setups](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#prerequisites--setups)<br/>
 [Method Running The Project(Locally)](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#method-running-the-projectlocally)<br/>
+[Prerequisites & Setups](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#prerequisites--setups)<br/>
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#synchronous-developing-notes)<br/>
 [Testing Results](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#testing-results)<br/>
