@@ -33,14 +33,13 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 
 # Method Running The Project(Locally)
 
-Download the project [`public`](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/public) and [`src`](https://github.com/KrystalZhang612/WeatherNavigator-App/tree/newbranch/src) folders to local directory. <br/>
+Download the project to local directory. <br/>
 In local console, locate to the project direcctory.<br/>
-
-
-
-
-
-
+Run `npm install`<br/> 
+Run `npm i react-select`<br/>
+Run `npm run start`<br/>
+Then test the App at http://localhost:3000/
+`C+CONTROL` to exit from the App. 
 
 # Prerequisites & Setups
 ## ***Getting API Keys:***
