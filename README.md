@@ -7,6 +7,7 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
+[React App](https://reactjs.org/docs/create-a-new-react-app.html)
 
 <div>
   <img src = "https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title = "Linux" alt = "Linux" width="60" height="60" />&nbsp;
