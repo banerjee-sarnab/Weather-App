@@ -3,7 +3,7 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 ## WeatherNavigator App Overview:<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/weather%20navigation%20app%20overview.png)
 
-# :hammer_and_wrench: Developing tools: 
+# :hammer_and_wrench: Developing Languages, Tools, and Techniques Needed
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
@@ -18,6 +18,7 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
   <img src = "https://github.com/devicons/devicon/blob/master/icons/visualstudio/visualstudio-plain.svg" title = "Visual Studio Code" alt = "Visual Studio Code" width= "60" height = "60"/>&nbsp; 
   <img src = "https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" title = "Node.JS" alt = "Node.JS" width= "60" height = "60"/>&nbsp; 
   <img src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title = "React JS App" alt = "React JS App" width= "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title = "JavaScript" alt = "JavaScript" width= "60" height = "60"/>&nbsp; 
   
   
   
