@@ -7,6 +7,11 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
+
+<div>
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/linux/linux-plain.svg" title = "Linux" alt = "Linux" width="60" height="60" />&nbsp;
+</div>
+
 - [Method pushing Vscode from Linux system to Github branch](https://stackoverflow.com/questions/45891052/vs-code-how-to-use-github-with-existing-local-project):<br/>
 In Vscode Terminal: <br/>
 `git init .`<br/> 
