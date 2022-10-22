@@ -10,6 +10,8 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 
 <div>
   <img src = "https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title = "Linux" alt = "Linux" width="60" height="60" />&nbsp;
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/ubuntu/ubuntu-plain.svg" title = "Ubuntu" alt = "Ubuntu" width= "60" height = "60"/>&nbsp;
+  
 </div>
 
 - [Method pushing Vscode from Linux system to Github branch](https://stackoverflow.com/questions/45891052/vs-code-how-to-use-github-with-existing-local-project):<br/>
