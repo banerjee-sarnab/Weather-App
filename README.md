@@ -10,6 +10,8 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 [JavaScript](https://www.javascript.com)<br/>
 [React JS App](https://reactjs.org/docs/create-a-new-react-app.html)<br/>
 [CSS3](https://en.wikipedia.org/wiki/CSS)<br/>
+[HTML5](https://en.wikipedia.org/wiki/HTML5)<br/> 
+
 
 
 
@@ -22,7 +24,7 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
   <img src = "https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" title = "React JS App" alt = "React JS App" width= "60" height = "60"/>&nbsp; 
   <img src = "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title = "JavaScript" alt = "JavaScript" width= "60" height = "60"/>&nbsp; 
   <img src = "https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"  title = "CSS3" alt = "CSS3" width= "60" height = "60"/>&nbsp; 
-  
+  <img src ="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg"  title = "HTML5" alt = "HTML5" width= "60" height = "60"/>&nbsp;
   
   
 </div>
