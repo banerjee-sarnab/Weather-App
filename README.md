@@ -45,7 +45,7 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 # Compatibility
 `Windows 10`, `WSL Vscode 1.68+`, `Linux Ubuntu 22.04.1 LTS`.
 
-# Method Running The Project(Locally)
+# Method to Run & Test the Project Locally
 
 Download the project to local directory. <br/>
 In local console, locate to the project direcctory.<br/>
