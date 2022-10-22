@@ -3,7 +3,7 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 ## WeatherNavigator App Overview:<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/weather%20navigation%20app%20overview.png)
 
-# Developing tools: 
+### :hammer_and_wrench: Developing tools: 
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
 [Visual Studio IDE 2022](https://visualstudio.microsoft.com/vs/)<br/>
 [NodeJS(node-v16.17.1-x64)](https://nodejs.org/ca/blog/release/v16.17.1/)<br/>
