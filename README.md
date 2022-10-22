@@ -12,6 +12,7 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
   <img src = "https://github.com/devicons/devicon/blob/master/icons/linux/linux-original.svg" title = "Linux" alt = "Linux" width="60" height="60" />&nbsp;
   <img src = "https://github.com/devicons/devicon/blob/master/icons/ubuntu/ubuntu-plain.svg" title = "Ubuntu" alt = "Ubuntu" width= "60" height = "60"/>&nbsp;
   <img src = "https://github.com/devicons/devicon/blob/master/icons/visualstudio/visualstudio-plain.svg" title = "Visual Studio Code" alt = "Visual Studio Code" width= "60" height = "60"/>&nbsp; 
+  <img src = "https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" title = "Node.JS" alt = "Node.JS" width= "60" height = "60"/>&nbsp; 
   
   
 </div>
