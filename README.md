@@ -57,13 +57,13 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 
 # Method to Run & Test the Project Locally
 
-Download the project to local directory. <br/>
-In local console, locate to the project direcctory.<br/>
-Run `npm install`<br/> 
-Run `npm i react-select`<br/>
-Run `npm run start`<br/>
-Then test the App at http://localhost:3000/
-`C+CONTROL` to exit from the App. 
+### Download the project to local directory. 
+### In local console, locate to the project direcctory.
+### Run `npm install`
+### Run `npm i react-select`
+### Run `npm run start`
+### Then test the App at http://localhost:3000/
+### `C+CONTROL` to exit from the App. 
 
 # Prerequisites & Setups
 ## ***Getting API Keys:***
