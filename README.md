@@ -53,7 +53,15 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 [Author](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#author)
 
 # Compatibility
-`Windows 10`, `WSL Vscode 1.68+`, `Linux Ubuntu 22.04.1 LTS`.
+# Compatibility
+|   OS             | Supported          |
+| -------          | ------------------ |
+| Windows 10       | :white_check_mark: |
+| macOS Mojave     | :white_check_mark: |             
+| macOS Monterey   | :white_check_mark: |
+| Linux            | :white_check_mark: |
+| Linux Kernel     | :white_check_mark: |
+| Ubuntu           | :white_check_mark: |
 
 # Method to Run & Test the Project Locally
 
