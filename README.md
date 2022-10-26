@@ -53,7 +53,6 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 [Author](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#author)
 
 # Compatibility
-# Compatibility
 |   OS             | Supported          |
 | -------          | ------------------ |
 | Windows 10       | :white_check_mark: |
