@@ -1,7 +1,9 @@
 # WeatherNavigation App
 A weather application using OpenWeatherMap API and GeoDB API with places autocomplete, with React skills. <br/>
 ## WeatherNavigator App Overview:<br/>
-![Screenshot](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/weather%20navigation%20app%20overview.png)
+![Screenshot](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/weather%20navigation%20app%20overview.png)<br/>
+![Screenshot]()<br/>
+
 
 # :hammer_and_wrench: Developing Languages, Tools, and Techniques Needed
 [Windows 10 Linux Ubuntu](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview)<br/>
