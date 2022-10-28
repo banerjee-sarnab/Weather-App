@@ -1,4 +1,4 @@
-# WeatherNavigator App
+# WeatherNavigation App
 A weather application using OpenWeatherMap API and GeoDB API with places autocomplete, with React skills. <br/>
 ## WeatherNavigator App Overview:<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/weather%20navigation%20app%20overview.png)
