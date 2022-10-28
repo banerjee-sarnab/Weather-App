@@ -1,5 +1,8 @@
 # KrystalZhang-WeatherNavigation App
 A weather application using OpenWeatherMap API and GeoDB API with places autocomplete, with React skills. <br/>
+### ***Please carefully read LICENSE.md about the Open Source restrictions and the personal use policy of this project under GPL-3.0 license, any commericial uses on this project by other than the owner @KrystalZhang612 or the authorized users and organizations, including unauthorized modifications, forks, pull requests, and other commercial-related uses will be subjected to copyright violation with severe legal concerns.***
+
+
 ## WeatherNavigator App Overview:<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigation-App/blob/newbranch/nyc%20weather%20overview1.png)<br/> 
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigation-App/blob/newbranch/san%20jose%20weather%20overview2.png)<br/> 
