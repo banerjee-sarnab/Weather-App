@@ -62,7 +62,7 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 [Testing Results](https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App#testing-results)<br/>
 
 # Contribution
-[Author](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/README.md#author)
+[Author](https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App#author)
 
 # Compatibility
 |   OS             | Supported          |
