@@ -1,4 +1,4 @@
-# WeatherNavigation App
+# KrystalZhang-WeatherNavigation App
 A weather application using OpenWeatherMap API and GeoDB API with places autocomplete, with React skills. <br/>
 ## WeatherNavigator App Overview:<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigation-App/blob/newbranch/nyc%20weather%20overview1.png)<br/> 
