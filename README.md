@@ -3,6 +3,8 @@ A weather application using OpenWeatherMap API and GeoDB API with places autocom
 ## WeatherNavigator App Overview:<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigator-App/blob/newbranch/weather%20navigation%20app%20overview.png)<br/>
 ![Screenshot](https://github.com/KrystalZhang612/WeatherNavigation-App/blob/newbranch/berlin%20weather%20overview4.png)<br/>
+![Screenshot](https://github.com/KrystalZhang612/WeatherNavigation-App/blob/newbranch/paris%20weather%20overview5.png)<br/>
+
 
 
 # :hammer_and_wrench: Developing Languages, Tools, and Techniques Needed
