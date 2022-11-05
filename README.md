@@ -60,6 +60,7 @@ Change New Branch in Github account `branches` section into Default Branch. <br/
 [Debugging&Troubleshooting](https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App#debuggingtroubleshooting)<br/> 
 [Synchronous Developing Notes](https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App#synchronous-developing-notes)<br/>
 [Testing Results](https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App#testing-results)<br/>
+[Tags and Topics]()
 
 # Contribution
 [Author](https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App#author)
@@ -597,6 +598,9 @@ DEBUGGING: install react-script globally instead: `npm install -g react-scripts`
 `ERROR`<br/>
 `[eslint] Plugin “react” was conflicted between “package.json >> eslint-react-app >> base.js directory...`<br/>
  DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
+ 
+ # Tags and Topics
+ react, react-js, nodejs, javascript, css, html, json-api, openweathermap-api, npx-create-react-app, npm management. 
 
 
 # Author
