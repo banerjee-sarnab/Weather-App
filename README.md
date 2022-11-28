@@ -577,8 +577,29 @@ DEBUGGING: install react-script globally instead: `npm install -g react-scripts`
  DEBUGGING: Neglectful error. Ignore the error until it naturally disappears.<br/>
  
  # Testing Results
- 
- 
+<p align = "center">
+     <img src =" https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/cities%20prefix%20data%20list%20fetched.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/case%20search%20tokyo.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/tokyo-sunny-test.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/30%20percentblack%20box.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/feels%20like%20details.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/more%20details.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/properly%20aligned%20current%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/los%20angeles%20real-time%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/berlin%20real-time%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/san%20diego%20real-time%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/tokyo%20real-time%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/dubai%20real-time%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/rome%20real-time%20weather.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/mumbai%20real-time%20weather.PNG">&nbsp;
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/7%20days%20daily%20forecast%20small%20icons.PNG">&nbsp;
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/dates%20and%20icons.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/forecast%20with%20description.PNG">&nbsp;
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/forecast%20with%20min-max%20temperature.PNG">&nbsp; 
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/better%20aligned%20forecast.PNG">&nbsp;
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/all%20forecast%20properties%20properly.PNG">&nbsp;
+     <img src = "https://github.com/KrystalZhang612/KrystalZhang-WeatherNavigation-App/blob/newbranch/testing-result-WeatherNavigation-App/forecast%20grid%20all%20info.PNG">
+</p> 
  
  # Tags and Topics
  react, react-js, nodejs, javascript, css, html, json-api, openweathermap-api, npx-create-react-app, npm management. 
