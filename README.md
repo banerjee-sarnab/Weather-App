@@ -1,7 +1,7 @@
 ```markdown
 # Weather App
 
-This is a simple web application that allows users to check the current weather of any place, built using React Framework.
+This is a weather browsing application using the OpenWeatherMap API and GeoDB API with places autocomplete, along with various React JS skills.
 
 ## Features
 
