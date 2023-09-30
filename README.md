@@ -1,16 +1,14 @@
-```markdown
-# Weather App
+### Weather App
 
 This is a weather browsing application using the OpenWeatherMap API and GeoDB API with places autocomplete, along with various React JS skills.
 
-## Features
+### Features
 
 - Display current weather information including temperature, humidity, and weather condition.
 - Search for weather information by location.
 - Automatically detects and displays weather for the user's current location.
 - Displays the forecast for the seven days of the queried location
 - User-friendly and responsive design.
-```
 
 
 ## Getting Started
